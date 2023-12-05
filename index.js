@@ -17,15 +17,8 @@ const tokens = [
   { symbol: "orbusdt", contract: "0x2dab440dcf557e306ee47e288cf57ccd154e2f64", chain: "polygon" },
   { symbol: "nakausdt", contract: "0xe6c36eed27c2e8ecb9a233bf12da06c9730b5955", chain: "polygon" },
   { symbol: "wifiusdt", contract: "0xcf0bb95967cd006f5eaa1463c9d710d1e1550a96", chain: "polygon" },  
-  { symbol: "ncashusdt", contract: "0xb8f66a8b3a1640492e3d45a26256c8ef4b934fe6", chain: "avalanche" },
-  { symbol: "xetausdt", contract: "0xd1cadc1738d6a550ceca6d851135cd280fbd1275", chain: "avalanche" },
-  { symbol: "fitfiusdt", contract: "0x1bb665942381fb2e67c4dccb04e6cfe7f130e93c", chain: "avalanche" },
-  { symbol: "hecusdt", contract: "0x4dc5291cdc7ad03342994e35d0ccc76de065a566", chain: "avalanche" },
-  { symbol: "dypusdt", contract: "0x497070e8b6c55fd283d8b259a6971261e2021c01", chain: "avalanche" },
-  { symbol: "wxtusdt", contract: "0x7cbd3769b3fa2bd6b3f33ccd53b990ab62975953", chain: "avalanche" },
-  { symbol: "gmxusdt", contract: "0x0c91a070f862666bbcce281346be45766d874d98", chain: "avalanche" },
   { symbol: "lblusdt", contract: "0x3999cb687aac02c3cce3608561092b8947d0e994", chain: "bsc" },
-  { symbol: "poolxusdt", contract: "0x60a4086c697d9203e8f3df992ff4e22998c020b6", chain: "bsc" },
+  { symbol: "poolxusdt", contract: "0xd7efcd3a6f56d91eccde4412d702d9c4fb069672", chain: "bsc" },
   { symbol: "sfundusdt", contract: "0x74fa517715c4ec65ef01d55ad5335f90dce7cc87", chain: "bsc" },
   { symbol: "spsusdt", contract: "0xfdfde3af740a22648b9dd66d05698e5095940850", chain: "bsc" },
   { symbol: "gptusdt", contract: "0xd99d2241a64fadaa7b501c7f52a3925afd0c3553", chain: "bsc" },
@@ -44,7 +37,6 @@ const tokens = [
   { symbol: "erthausdt", contract: "0x70531b39e2bb4d8da59e2ce41a98eba2990f8497", chain: "bsc" },
   { symbol: "strmusdt", contract: "0xc9e35a73b1c7e5724bc07187ea6de6afaab05be3", chain: "bsc" },
   { symbol: "sfundusdt", contract: "0x74fa517715c4ec65ef01d55ad5335f90dce7cc87", chain: "bsc" },
-  { symbol: "spsusdt", contract: "0xfdfde3af740a22648b9dd66d05698e5095940850", chain: "bsc" },
   { symbol: "ceekusdt", contract: "0x119d6ebe840966c9cf4ff6603e76208d30ba2179", chain: "bsc" },
   { symbol: "dksusdt", contract: "0x8d60314aff258d6ce282161e6c2c17d70bddd310", chain: "bsc" },
   { symbol: "starlyusdt", contract: "0x7edf1019de953c5539ce0c06035f8685ec49c908", chain: "bsc" },
@@ -58,30 +50,7 @@ const tokens = [
   { symbol: "arvusdt", contract: "0xa63e32feefc6590bbf869070fd2e706eb7881bd2", chain: "bsc" },
   { symbol: "mcrtusdt", contract: "0xf8209291b074dc74d39c906386f0037718a15072", chain: "bsc" },
   { symbol: "ntusdt", contract: "0x1ddf4d50f1f97e35898b8837fe672f4d7708e030", chain: "bsc" },
-  { symbol: "iguusdt", contract: "0x55ceef0a5252b87b19b65ef5967674c91e5c3af6", chain: "bsc" },
-  { symbol: "magicusdt", contract: "0xb7e50106a5bd3cf21af210a755f9c8740890a8c9", chain: "arbitrum" },
-  { symbol: "gmxusdt", contract: "0x1aeedd3727a6431b8f070c0afaa81cc74f273882", chain: "arbitrum" },
-  { symbol: "grailusdt", contract: "0x8cc8093218bcac8b1896a1eed4d925f6f6ab289f", chain: "arbitrum" },
-  { symbol: "rdntusdt", contract: "0x24704aff49645d32655a76df6d407e02d146dafc", chain: "arbitrum" },
-  { symbol: "slcusdt", contract: "84sk8vke7csvkeluev6y59guji9dkzuqtc3nxnnqkans", chain: "solana" },
-  { symbol: "diousdt", contract: "ag1kiozxuxdvdkacnpowe8scvvkpecm3nz9ahxbsnkba", chain: "solana" },
-  { symbol: "wlknusdt", contract: "6ygxblkli3z7vcdwqzduwhpmyjhnfwxvftzbgmwtnnsf", chain: "solana" },
-  { symbol: "zbcusdt", contract: "aceayrtwt4pyb2phqf2qhdgnzdtkvnaxgl8ru3v4an1p", chain: "solana" },
-  { symbol: "gariusdt", contract: "54fn6akxtt8srbgjcozq6usbnxsygjuf5ur6ujsdhhvs", chain: "solana" },
-  { symbol: "gstusdt", contract: "5nlemabmyujqubvxnfvyupbtykwtxbesfmfmdswbgquz", chain: "solana" },
-  { symbol: "acsusdt", contract: "dqbuwszolpuhmdyqnjzpctpbkokdjhmzde1cjowk2pnt", chain: "solana" },
-  { symbol: "atsusdt", contract: "gtg2jhaatyz7dxknwcnvpsmplognrqxum6uoha3j1jrb", chain: "solana" },
-  { symbol: "gmtusdt", contract: "7pnq9rfsgcbcc3xtel6cwwazevqqgvkxexmxp2tjs7rm", chain: "solana" },
-  { symbol: "auryusdt", contract: "gr7wkybqrlt7oukjz54lsbiuf8egnwcj3ogtn8dkbfeb", chain: "solana" },
-  { symbol: "gstusdt", contract: "5nlemabmyujqubvxnfvyupbtykwtxbesfmfmdswbgquz", chain: "solana" },
-  { symbol: "mplxusdt", contract: "8nj76wcnqdk7rewwforxhdmvaf8bw8tprguww3uneegk", chain: "solana" },
-  { symbol: "hbbusdt", contract: "cyrgnwfdqg27mgjglph6wq7i8wieawbfahpoxzkfk182", chain: "solana" },
-  { symbol: "saousdt", contract: "bwct76eq8jtrkkmm234zy1qexsfzytrzhyxae3dxeqfd", chain: "solana" },
-  { symbol: "eluusdt", contract: "hfduu77a4chrqw3q91gqzpnh3rtucd9hduqctxggutrn", chain: "solana" },
-  { symbol: "likeusdt", contract: "gmadnmwstywjaxvbjjthnmcwaku6cn5hhtwwyezt4odo", chain: "solana" },
-  { symbol: "snsusdt", contract: "b969rqaavs5wfqsvzymzhwb4virxxwxgzvlf2rcmafap", chain: "solana" },
-  { symbol: "rocousdt", contract: "0x4a2cb99e8d91f82cf10fb97d43745a1f23e47caa", chain: "avalanche" },
-  { symbol: "shrapusdt", contract: "0xd8b9be610d769a49626d3059cdf3fea983b46715", chain: "avalanche" }
+  { symbol: "iguusdt", contract: "0x55ceef0a5252b87b19b65ef5967674c91e5c3af6", chain: "bsc" }
 ];
 
 setInterval(() => {
@@ -152,7 +121,7 @@ app.get("/", (req, res) => {
         <th>Huobi/BSC Ask Ratio</th>
       </tr>
       ${tokens.map(token => {
-        if (token.al_dex < 0.99 || token.sat_dex > 1.01) {
+        if (token.al_dex < 0.995 || token.sat_dex > 1.005) {
           return `
             <tr>
               <td>${token.symbol}</td>
