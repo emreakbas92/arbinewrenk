@@ -21,7 +21,7 @@ const tokens = [
   { symbol: "poolxusdt", contract: "0xd7efcd3a6f56d91eccde4412d702d9c4fb069672", chain: "bsc" },
   { symbol: "sfundusdt", contract: "0x74fa517715c4ec65ef01d55ad5335f90dce7cc87", chain: "bsc" },
   { symbol: "spsusdt", contract: "0xfdfde3af740a22648b9dd66d05698e5095940850", chain: "bsc" },
-  { symbol: "gptusdt", contract: "0xd99d2241a64fadaa7b501c7f52a3925afd0c3553", chain: "bsc" },
+  { symbol: "cgptusdt", contract: "0xc773f8873fa213117b3b56fb970e30ab9d5feb9d", chain: "bsc" },
   { symbol: "revousdt", contract: "0x87d578160fc865aaffe44e79e3cdbf8379d67caf", chain: "bsc" },
   { symbol: "ktusdt", contract: "0xa08b49787bbd9f958fd418a89d0d129427534c15", chain: "bsc" },
   { symbol: "vlxusdt", contract: "0x48d807e5cb92617953a88cce78dcf31012f4d6b6", chain: "bsc" },
